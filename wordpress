@@ -1,0 +1,56 @@
+Wordpress
+
+-------------------
+
+<files wp-config.php>
+Order deny,allow
+deny from all
+</files>
+
+<Files readme.html>
+order allow,deny
+deny from all
+</Files>
+
+<Files license.txt>
+order allow,deny
+deny from all
+</Files>
+
+
+<Files wp-login.php>
+AuthType Basic
+AuthName "Bitte melden Sie sich an"
+AuthUserFile /home/www/p257164/html/.htpasswd
+require valid-user
+</Files>
+
+define('AUTOMATIC_UPDATER_DISABLED', true ); 
+define('DISALLOW_FILE_EDIT', true);
+
+
+--------------------
+
+AuthType Basic
+AuthName "Bitte melden Sie sich an"
+AuthUserFile /kunden/183034_09125/webseiten/.htpasswd
+require valid-user
+
+<Files admin-ajax.php>
+Order allow,deny
+Allow from all
+Satisfy any
+</Files>
+
+
+
+——————————
+
+
+Disable Guttenberg
+
+// disable for posts
+add_filter('use_block_editor_for_post', '__return_false', 10);
+
+// disable for post types
+add_filter('use_block_editor_for_post_type', '__return_false', 10);
