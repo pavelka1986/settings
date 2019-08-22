@@ -1,10 +1,9 @@
-{
-	"color_scheme": "Packages/Jeffrey Way Theme/schemes/Facebook.tmTheme",
-	"font_size": 14,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"open_files_in_new_window": false,
-	"theme": "Material-Theme.sublime-theme"
+{  
+   "color_scheme":"Packages/Jeffrey Way Theme/schemes/Facebook.tmTheme",
+   "font_size":14,
+   "ignored_packages":[  
+      "Vintage"
+   ],
+   "open_files_in_new_window":false,
+   "theme":"Material-Theme.sublime-theme"
 }
