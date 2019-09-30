@@ -1,0 +1,1 @@
+httrack https://www.fds-tools.com  -O "/Users/davidpavelka/websites/fds20190930"  -%v
