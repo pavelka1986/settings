@@ -1,0 +1,107 @@
+<div class="stage stage1">
+<h3>Request for Proposal</h3>
+[radio stage1-casing default:1 "Casing 1" "Casing 2" "Casing 3" "Casing 4"]
+<a class="button next">Next</a>
+</div>
+
+<div class="stage stage2">
+<h3>Request in imperial or metric</h3>
+[radio stage2-unit default:1 "imperial" "metric"]
+<a class="button next">Next</a>
+</div>
+
+<div class="stage stage3">
+<h3>What diameter casings do you need for your project</h3>
+[group stage3-imperial][radio stage3-casing-mm default:1 "750mm" "880mm" "1000mm" "1180mm" "1500mm"]
+<div class="sameline"><label for="stage3-deep-imperial">How many meter do you need for your project</label>[text stage3-deep-imperial] m</div>[/group]
+[group stage3-metric][radio stage3-casing-inch default:1 "30inch" "35inch" "39inch" "46inch" "59inch"]
+<div class="sameline"><label for="stage3-deep-metric">How many meter do you need for your project</label>[text stage3-deep-metric] ft</div>[/group]
+<a class="button next">Next</a> <a class="button active next">I dont need casing</a>
+</div>
+
+
+<div class="stage stage4">
+<h3>What kind of drilling tools do you need for your project</h3>
+<div class="sameline">[group stage4-imperial]<label for="stage4-diametr">I need drilling tools for diameter</label>[text stage4-diametr-imprial] mm[/group]</div>
+<div class="sameline">[group stage4-metric]<label for="stage4-diametr">I need drilling tools for diameter</label>[text stage4-diametr-metric] inch[/group]</div>
+
+<div class="sameline"><label for="stage4-drillingbucket">drilling bucket</label>[text stage4-drillingbucket] items</div>
+<div class="sameline"><label for="stage4-cleaningbucket">cleaning bucket</label>[text stage4-cleaningbucket] items</div>
+<div class="sameline"><label for="stage4-auger">auger</label>[text stage4-auger] items</div>
+<div class="sameline"><label for="stage4-corebarrel">core barrel</label>[text stage4-corebarrel] items</div>
+<div class="sameline"><label for="stage4-casingclamp">casing clamp</label>[text stage4-casingclamp] items</div>
+<div class="sameline"><label for="stage4-driveadapter">drive adapter</label>[text stage4-driveadapter] items</div>
+<div class="sameline"><label for="stage4-casingshoe">casing shoe</label>[text stage4-casingshoe] items</div>
+
+<a class="button next">Next</a> <a class="button active next">I dont need drilling tools</a>
+</div>
+
+<div class="stage stage5">
+<h3>When and for how long do you need to tools</h3>
+[radio stage5-start default:1 "immedialtely" "next month" "next 2-3 month" ]
+<div class="sameline"><label for="stage5-duration">For how long do you need the tools</label>[text stage5-duration] month</div>
+<a class="button next">Next</a> <a class="button active next">I can't say</a>
+</div>
+
+<div class="stage stage6">
+<h3>Where do you need the tools?</h3>
+<div class="sameline"><label for="stage6-city">City</label>[text stage6-city]</div>
+<div class="sameline"><label for="stage6-zip">Postal code</label>[text stage6-zip]</div>
+<a class="button next">Next</a> <a class="button active next">I can't tell</a>
+</div>
+
+<div class="stage stage7">
+<h3>Who will receive the offer</h3>
+<div class="sameline"><label for="stage7-firstname">First Name</label>[text* stage7-firstname]</div>
+<div class="sameline"><label for="stage7-lastname">Last Name</label>[text* stage7-lastname]</div>
+<div class="sameline"><label for="stage7-company">Company</label>[text* stage7-company]</div>
+<div class="sameline"><label for="stage7-email">Email address</label>[email* stage7-email]</div>
+<div class="sameline"><label for="stage7-phone">Phone number</label>[text* stage7-phone]</div>
+[submit "Submit"]
+</div>
+
+<div class="stage zero"></div>
+
+
+/***************************************************/
+<h3>Request for Proposal</h3>
+Casing: [stage1-casing]
+
+<h3>Request in imperial or metric</h3>
+Unit: [stage2-unit]
+
+<h3>What diameter casings do you need for your project</h3>
+Diametr: [stage3-casing-mm] mm
+Diametr: [stage3-casing-inch] inch
+
+How many meter do you need for your project: [stage3-deep-imperial] m
+How many meter do you need for your project: [stage3-deep-metric] ft
+
+
+<h3>What kind of drilling tools do you need for your project</h3>
+I need drilling tools for diameter: [stage4-diametr-imprial] mm
+I need drilling tools for diameter: [stage4-diametr-metric] inch
+
+drilling bucket: [stage4-drillingbucket] items
+cleaning bucket: [stage4-cleaningbucket] items
+auger: [stage4-auger] items
+core barrel: [stage4-corebarrel] items
+casing clamp: [stage4-casingclamp] items
+drive adapter: [stage4-driveadapter] items
+casing shoe: [stage4-casingshoe] items
+
+<h3>When and for how long do you need to tools</h3>
+Start: [stage5-start]
+For how long do you need the tools: [stage5-duration] month
+
+<h3>Where do you need the tools?</h3>
+City: [stage6-city]
+Postal code</label>[stage6-zip]
+
+
+<h3>Who will receive the offer</h3>
+First Name: [stage7-firstname]
+Last Name: [stage7-lastname]
+Company: [stage7-company]
+Email address: [stage7-email]
+Phone number: [stage7-phone]
