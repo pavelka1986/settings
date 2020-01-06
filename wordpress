@@ -27,6 +27,7 @@ require valid-user
 
 define('AUTOMATIC_UPDATER_DISABLED',true); 
 define('DISALLOW_FILE_EDIT',true);
+define('WP_DISABLE_FATAL_ERROR_HANDLER',true);
 
 
 --------------------
