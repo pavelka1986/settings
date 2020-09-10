@@ -1,56 +1,48 @@
-{  
-   "disable_completions":false,
-   "snippets":{  
-      "css":{  
-         "filters":"css",
-         "profile":"css",
-         "unitlessProperties":"z-index",
-         "snippets":{  
-            "em":"em",
-            "white":"color: #fff;",
-            "black":"color: #000;",
-            "container":"container",
-            "block":"#block {\n\t.container {\n\t\tpadding: 50px auto;\n\t\t|\n\t}\n}",
-            "hover":"&:hover {\n\t|\n}",
-            "and":"& {\n\t|\n}",
-            "before":"&:before {\n\tcontent: ' ';|\n}",
-            "after":"&:after {\n\tcontent: ' ';|\n}",
-            "awesome":"&:before {\n\tcontent: '\\f101';\n\tfont-family: 'FontAwesome';|\n}",
-            "ul":"ul {\n\tli {\n\t\ta {\n\t\t\t|\n\t\t}\n\t}\n}",
-            "cover":"-webkit-background-size: cover;\n -moz-background-size: cover;\n-o-background-size: cover;\nbackground-size: cover;",
-            "flex":"display: flex;\njustify-content: center;\nalign-items: center;",
-            "border-box":"*, *:after, *:before {\n\t-webkit-box-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\tbox-sizing: border-box;\n}",
-            "bgc":"background-color:#${1:fff};",
-            "bgr":"background-color: rgba(256,256,256,0.5);",
-            "bgi":"background-image:url('img/|');\nbackground-repeat: no-repeat;\nbackground-size: 100%;",
-            "dib":"display: inline-block;\nvertical-align: top;",
-            "trl":"transition: all 0.5s linear;",
-            "checkbox":"input[type=checkbox]:checked + span \n{\n\t|\n}",
-            "placeholder":"&::-webkit-input-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n&:-moz-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n&::-moz-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n&:-ms-input-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n",
-            "element":".element {\n\tdisplay: inline-block;\n\tvertical-align: top;\n\twidth: 300px;\n\tmargin-right: 20px;\n\tfigure {\n\t\theight: 200px;\n\t}\n\t&.element1 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.element2 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.element3 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.nth-child(3n+3) {\n\t\tmargin-right: 0;\n\t}\n}\n",
-            "variables":"\\$minmobile: 365px;\n\\$mobile: 500px;\n\\$tablet: 767px;\n\\$desktop: 1200px;\n\\$full: 1600px;\n\n\\$primary: #000;\n\\$secondary: #999;\n",
-            "minmobile":"@media only screen and (min-width: \\$minmobile) {\n\t|\n}",
-            "mobile":"@media only screen and (min-width: \\$mobile) {\n\t|\n}",
-            "tablet":"@media only screen and (min-width: \\$tablet) {\n\t|\n}",
-            "desktop":"@media only screen and (min-width: \\$desktop) {\n\t|\n}",
-            "full":"@media only screen and (min-width: \\$full) {\n\t|\n}",
-            "media":"@media only screen and (min-width: \\$mobile) {\n\t|\n}\n @media only screen and (min-width: \\$tablet) {\n\t|\n}\n @media only screen and (min-width: \\$desktop) {\n\t|\n}\n",
+{
+	"auto_mark": true,
+	"abbreviation_preview": true,
+	"config":
+	{
+		"stylesheet":
+		{	
+			"snippets":
+			{
+				"after": "&:after {\n\tcontent: ' ';${1}\n}",
+				"and": "& {\n\t${1}\n}",				
+				"awesome": "&:before {\n\tcontent: '\\f101';\n\tfont-family: 'FontAwesome';${1}\n}",
+				"before": "&:before {\n\tcontent: ' ';${1}\n}",
+				"bcolor": "background-color:#${1:fff};",
+				"bgi": "background-image:url('img/${1}');\nbackground-repeat: no-repeat;\nbackground-size: 100%;",
+				"background-color": "background-color: rgba(256,256,256,0.5);",
+				"black": "color: #000;",
+				"block": "#block {\n\t.container {\n\t\tpadding: 50px auto;\n\t\t${1}\n\t}\n}",
+				"border-box": "*, *:after, *:before {\n\t-webkit-box-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\tbox-sizing: border-box;\n}",
+				"checkbox": "input[type=checkbox]:checked + span \n{\n\t${1}\n}",
+				"container": "container",
+				"cover": "-webkit-background-size: cover;\n -moz-background-size: cover;\n-o-background-size: cover;\nbackground-size: cover;",
+				"desktop": "@media only screen and (min-width: \\$desktop) {\n\t${1}\n}",
+				"dib": "display: inline-block;\nvertical-align: top;",
+				"element": ".element {\n\tdisplay: inline-block;\n\tvertical-align: top;\n\twidth: 300px;\n\tmargin-right: 20px;\n\tfigure {\n\t\theight: 200px;\n\t}\n\t&.element1 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.element2 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.element3 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.nth-child(3n+3) {\n\t\tmargin-right: 0;\n\t}\n}\n",
+				"em": "em",
+				"lh": "line-height",
+				"fs": "font-size",
+				"flex": "display: flex;\njustify-content: center;\nalign-items: center;",
+				"fool": "foo.bar>baz",
+				"full": "@media only screen and (min-width: \\$full) {\n\t${1}\n}",
+				"hover": "&:hover {\n\t${1}\n}",
+				"media": "@media only screen and (min-width: \\$mobile) {\n\t${1}\n}\n @media only screen and (min-width: \\$tablet) {\n\t${1}\n}\n @media only screen and (min-width: \\$desktop) {\n\t${1}\n}\n",
+				"minmobile": "@media only screen and (min-width: \\$minmobile) {\n\t${1}\n}",
+				"mobile": "@media only screen and (min-width: \\$mobile) {\n\t${1}\n}",
+				"placeholder": "&::-webkit-input-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n&:-moz-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n&::-moz-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n&:-ms-input-placeholder {\n\tcolor: #000 !important;\n\topacity: 1 !important;\n}\n",
+				"tablet": "@media only screen and (min-width: \\$tablet) {\n\t${1}\n}",
+				"trl": "transition: all 0.5s linear;",
+				"ul": "ul {\n\tli {\n\t\ta {\n\t\t\t${1}\n\t\t}\n\t}\n}",
+				"var": "\\$minmobile: 365px;\n\\$mobile: 500px;\n\\$tablet: 767px;\n\\$desktop: 1200px;\n\\$full: 1600px;\n\n\\$primary: #000;\n\\$secondary: #999;\n",
+				"white": "color: #fff;"
+			}
+		}
+	},
 
-         }
-      },
-      "html":{  
-         "snippets":{  
-            "header":"(div.row.row-header>div.container>div.grid>a.toplogo+ul.headernav>li.item1*5>a>Lorem1)",
-            "slider":"(div.row.row-slider>.container>div.grid>(.topslider-wrapper>(.topslider>(.slide>((img)+(.text-box>div>((span.first>lorem2)+(span.second>lorem2)+(a.button>lorem1)))))*2)+(.navigation>div*2>span>lorem1)))",
-            "intro":"(div#intro.row.row-content>div.container>div.grid>div.col-md-12>(h1>lorem1)+p*2>lorem150)",
-            "element":"(div#element.row.row-content>div.container>div.grid>(div.col-md-3.element.element1>figure+h2{Lorem ipsum}+lorem15)*3)",
-            "footer":"(div.row.row-footer>div.container>div.grid>div.copy+ul.footernav>lorem8.item*4>a)",
-
-         }
-      }
-   },
-   "preferences":{  
-      "css.unitlessProperties":"z-index,  opacity, font-weight"
-   },
-
+	"telemetry": false,
+	"uid": "164202ba-7afc-45f9-8931-3cc4d0c53964"
 }
