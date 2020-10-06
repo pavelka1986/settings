@@ -1,19 +1,47 @@
 {
-	"auto_mark": true,
-	"abbreviation_preview": true,
+	"abbreviation_preview": false,
 	"config":
 	{
+		"css":
+		{
+			"snippets":
+			{
+				"prop": "some-prop:${value}"
+			}
+		},
+		"html":
+		{
+			"snippets":
+			{
+				"myhtml": "main.my-html>section"
+			}
+		},
+		"markup":
+		{
+			"options":
+			{
+				
+			},
+			"snippets":
+			{
+				"foo": "ul.foo>li.foo-item*4"
+			}
+		},
 		"stylesheet":
-		{	
+		{
+			"options":
+			{
+				"stylesheet.shortHex": false
+			},
 			"snippets":
 			{
 				"after": "&:after {\n\tcontent: ' ';${1}\n}",
-				"and": "& {\n\t${1}\n}",				
+				"and": "& {\n\t${1}\n}",
 				"awesome": "&:before {\n\tcontent: '\\f101';\n\tfont-family: 'FontAwesome';${1}\n}",
-				"before": "&:before {\n\tcontent: ' ';${1}\n}",
-				"bcolor": "background-color:#${1:fff};",
-				"bgi": "background-image:url('img/${1}');\nbackground-repeat: no-repeat;\nbackground-size: 100%;",
 				"background-color": "background-color: rgba(256,256,256,0.5);",
+				"bcolor": "background-color:#${1:fff};",
+				"before": "&:before {\n\tcontent: ' ';${1}\n}",
+				"bgi": "background-image:url('img/${1}');\nbackground-repeat: no-repeat;\nbackground-size: 100%;",
 				"black": "color: #000;",
 				"block": "#block {\n\t.container {\n\t\tpadding: 50px auto;\n\t\t${1}\n\t}\n}",
 				"border-box": "*, *:after, *:before {\n\t-webkit-box-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\tbox-sizing: border-box;\n}",
@@ -24,12 +52,14 @@
 				"dib": "display: inline-block;\nvertical-align: top;",
 				"element": ".element {\n\tdisplay: inline-block;\n\tvertical-align: top;\n\twidth: 300px;\n\tmargin-right: 20px;\n\tfigure {\n\t\theight: 200px;\n\t}\n\t&.element1 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.element2 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.element3 {\n\t\tbackground-color: #fff;\n\t\tfigure {\n\t\t}\n\t}\n\t&.nth-child(3n+3) {\n\t\tmargin-right: 0;\n\t}\n}\n",
 				"em": "em",
-				"lh": "line-height",
-				"fs": "font-size",
+				"db" : "display: block",
 				"flex": "display: flex;\njustify-content: center;\nalign-items: center;",
+				"foo": "foo-bar",
 				"fool": "foo.bar>baz",
+				"fs": "font-size",
 				"full": "@media only screen and (min-width: \\$full) {\n\t${1}\n}",
 				"hover": "&:hover {\n\t${1}\n}",
+				"lh": "line-height",
 				"media": "@media only screen and (min-width: \\$mobile) {\n\t${1}\n}\n @media only screen and (min-width: \\$tablet) {\n\t${1}\n}\n @media only screen and (min-width: \\$desktop) {\n\t${1}\n}\n",
 				"minmobile": "@media only screen and (min-width: \\$minmobile) {\n\t${1}\n}",
 				"mobile": "@media only screen and (min-width: \\$mobile) {\n\t${1}\n}",
@@ -38,11 +68,13 @@
 				"trl": "transition: all 0.5s linear;",
 				"ul": "ul {\n\tli {\n\t\ta {\n\t\t\t${1}\n\t\t}\n\t}\n}",
 				"var": "\\$minmobile: 365px;\n\\$mobile: 500px;\n\\$tablet: 767px;\n\\$desktop: 1200px;\n\\$full: 1600px;\n\n\\$primary: #000;\n\\$secondary: #999;\n",
-				"white": "color: #fff;"
+				"white": "color: #fff;",
+				"abs": "position: absolute",
+				"rel": "position: relative",
+				"fn": "float: none",
 			}
 		}
 	},
-
 	"telemetry": false,
-	"uid": "164202ba-7afc-45f9-8931-3cc4d0c53964"
+	"uid": "41cb2db7-5cc7-4578-acf6-5a3bd246f7d0"
 }
